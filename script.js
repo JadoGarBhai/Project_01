@@ -1,0 +1,4 @@
+                            // Slider
+function slider() {
+    
+}
