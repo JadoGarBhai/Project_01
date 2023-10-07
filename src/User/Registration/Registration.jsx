@@ -22,43 +22,46 @@ const Registration = () => {
   const submitHandler = (e) => {};
 
   return (
-    <form className="row g-3">
-      <div className="col-md-6">
-        <label className="form-label">Email</label>
-        <input
-          type="email"
-          className="form-control"
-          name="email"
-          onChange={changeHandler}
-        />
+    <div className="body">
+      <div className="wrapper">
+        <div className="form-container sign-up">
+          <form action="#">
+            <h2>sign up</h2>
+            <div className="form-group">
+              <input type="text" required />
+              <label for="">username</label>
+              <i className="fas fa-user"></i>
+            </div>
+            <div className="form-group">
+              <input type="email" required />
+              <label for="">email</label>
+              <i className="fas fa-at"></i>
+            </div>
+            <div className="form-group">
+              <input type="password" required />
+              <label for="">password</label>
+              <i className="fas fa-lock"></i>
+            </div>
+            <div className="form-group">
+              <input type="password" required />
+              <label for="">confirm password</label>
+              <i className="fas fa-lock"></i>
+            </div>
+            <button type="submit" className="btn">
+              sign up
+            </button>
+            <div className="link">
+              <p>
+                You already have an account?
+                <a href="#" className="signin-link">
+                  sign in
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <div className="col-md-6">
-        <label className="form-label">Password</label>
-        <input
-          type="password"
-          className="form-control"
-          name="password"
-          onChange={changeHandler}
-        />
-      </div>
-
-      <div className="col-md-6">
-        <label className="form-label">Confirm Password</label>
-        <input
-          type="password"
-          className="form-control"
-          name="confirmPassword"
-          onChange={changeHandler}
-        />
-      </div>
-
-      <div className="col-12 text-center">
-        <button type="submit" className="btn btn-primary">
-          Sign in
-        </button>
-      </div>
-    </form>
+    </div>
   );
 };
 
