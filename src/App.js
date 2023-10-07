@@ -1,11 +1,9 @@
-import Registration from "./User/Registration/Registration";
-import Login from "./User/Login/Login";
+import Routing from "./Routing/Routing";
 
 function App() {
   return (
     <>
-      <Registration />
-      {/* <Login /> */}
+      <Routing />
     </>
   );
 }

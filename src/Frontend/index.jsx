@@ -5,7 +5,8 @@ import Home from "./Home/Home";
 const Index = () => {
   return (
     <Routes>
-      <Route path="/" element={Home} />
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<>Page Not page</>} />
     </Routes>
   );
 };
