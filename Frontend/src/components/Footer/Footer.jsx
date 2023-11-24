@@ -1,8 +1,6 @@
 import React from "react";
 
 function Footer() {
-  const date = new Date();
-  const year = date.getFullYear();
   return (
     <div>
       <footer>
@@ -10,8 +8,7 @@ function Footer() {
           <div className="row">
             <div className="col">
               <p>
-                &copy; {year} Bank.Made with{" "}
-                <span className="text-white"> ❤ </span> by{" "}
+                Made with <span className="text-white"> ❤ </span> by{" "}
                 <a
                   className="text-white fw-bold"
                   target="_blank"
