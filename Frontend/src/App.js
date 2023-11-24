@@ -1,7 +1,14 @@
-import "./App.css";
+import "./App.scss";
+// Checking
+
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
