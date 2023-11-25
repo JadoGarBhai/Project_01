@@ -14,7 +14,7 @@ const Routing = () => {
         <Route index element={<Frontend />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/forgotPassword" element={<ForgetPassword />} />
+        <Route path="/forgetPassword" element={<ForgetPassword />} />
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
