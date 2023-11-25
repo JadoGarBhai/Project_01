@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BsFacebook, BsGithub, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsWhatsapp } from "react-icons/bs";
 import dayjs from "dayjs";
 
 function TopBar() {
@@ -20,14 +20,14 @@ function TopBar() {
           </div>
           <div className="col-5 text-end">
             <a
-              href="https://www.facebook.com/ahmad.jajja.9081/"
+              href="https://www.facebook.com/profile.php?id=100008323875360"
               className="text-light"
               target="_blank"
             >
               <BsFacebook className="mb-0 me-2" />
             </a>
             <a
-              href="https://github.com/Ahmadjajja?tab=overview&from=2022-06-01&to=2022-06-30"
+              href="https://github.com/JadoGarBhai"
               className="text-light"
               target="_blank"
             >
@@ -35,11 +35,11 @@ function TopBar() {
             </a>
 
             <a
-              href="https://twitter.com/AhmadJajja786"
+              href="https://wa.me/+923487613204"
               className="text-light"
               target="_blank"
             >
-              <BsTwitter className="mb-0 me-2" />
+              <BsWhatsapp className="mb-0 me-2" />
             </a>
           </div>
         </div>
