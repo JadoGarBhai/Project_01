@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
           style={{ zIndex: "1000" }}
         >
           <div class="container">
-            <a class="navbar-brand h1" href="#">
+            <Link class="navbar-brand h1" to="/">
               Jado's Bank
-            </a>
+            </Link>
 
             <button
               class="navbar-toggler"
@@ -26,8 +27,10 @@ const Navbar = () => {
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <button class="btn btn-light ms-auto " type="button">
-                Login
+              <button class="btn btn-light ms-auto" type="button">
+                <Link to="/login" className="text-decoration-none">
+                  Login
+                </Link>
               </button>
             </div>
           </div>

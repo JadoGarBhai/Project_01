@@ -1,14 +1,14 @@
 import "./App.scss";
+import Routing from "./Routing/Routing";
 // Checking
 
 // import LandingPage from "./pages/LandingPage";
-import Signup from "./pages/auth/Signup";
+// import Signup from "./pages/auth/Signup";
 
 function App() {
   return (
     <>
-      {/* <LandingPage /> */}
-      <Signup />
+      <Routing />
     </>
   );
 }
