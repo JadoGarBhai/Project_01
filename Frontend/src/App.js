@@ -1,12 +1,14 @@
 import "./App.scss";
 // Checking
 
-import LandingPage from "./pages/LandingPage";
+// import LandingPage from "./pages/LandingPage";
+import Signup from "./pages/auth/Signup";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <Signup />
     </>
   );
 }
