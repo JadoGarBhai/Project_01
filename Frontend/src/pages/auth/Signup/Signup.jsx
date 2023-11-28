@@ -1,10 +1,13 @@
 import { useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+// import { jwtDecode } from "jwt-decode";
 
 const initialState = { email: "", password: "", confirmPassword: "" };
 const Signup = () => {
   const [state, setState] = useState(initialState);
+  // console.log(state);
   const [isPasswordShow, setIsPasswordShow] = useState(false);
   const [isConfirmPasswordShow, setIsConfirmPasswordShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -14,8 +17,26 @@ const Signup = () => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  // const { email, password, confirmPassword } = state;
   const handleSubmit = (e) => {
     e.preventDefault();
+    let password = state.password;
+    let confirmPassword = state.confirmPassword;
+    if (password === confirmPassword) {
+      axios
+        .post("http://localhost:8000/auth/register", state)
+        .then((res) => {
+          console.log("res.data : ", res.data);
+          alert("User successfuly registered");
+          // setIsRegister(true);
+          setState(initialState);
+        })
+        .catch((error) => {
+          console.log("Error : ", error.message);
+        });
+    } else {
+      alert("Password and Confirm Password not matched.");
+    }
   };
 
   //   const Navigate = useNavigate();
@@ -48,6 +69,7 @@ const Signup = () => {
                         placeholder="Email"
                         aria-label="email"
                         name="email"
+                        value={state.email}
                         required
                         onChange={handleChange}
                       />
@@ -62,6 +84,7 @@ const Signup = () => {
                         id="password"
                         placeholder="Password"
                         name="password"
+                        value={state.password}
                         aria-label="password"
                         aria-describedby="addon-wrapping"
                         required
@@ -91,6 +114,7 @@ const Signup = () => {
                         id="confirmPassword"
                         placeholder="Confirm Password"
                         name="confirmPassword"
+                        value={state.confirmPassword}
                         aria-label="confirmPassword"
                         aria-describedby="addon-wrapping"
                         required
