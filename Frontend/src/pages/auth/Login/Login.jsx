@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { jwtDecode } from "jwt-decode";
 
 const initialState = { email: "", password: "" };
 
@@ -7,6 +9,7 @@ const Login = () => {
   const [state, setState] = useState(initialState);
   const [isPasswordShow, setIsPasswordShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -14,6 +17,19 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios
+      .post("http://localhost:8000/auth/login", state)
+      .then((res) => {
+        console.log("res.data : ", res.data);
+        alert("User successfuly Loggedin!!");
+        // setIsRegister(false);
+        setState(initialState);
+        console.log("Token Payload : ", jwtDecode(res.data.token));
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log("Error : ", error.message);
+      });
   };
 
   const handleGoogleAuthentication = (e) => {

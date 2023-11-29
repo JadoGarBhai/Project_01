@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 // import { jwtDecode } from "jwt-decode";
 
@@ -11,6 +11,7 @@ const Signup = () => {
   const [isPasswordShow, setIsPasswordShow] = useState(false);
   const [isConfirmPasswordShow, setIsConfirmPasswordShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ const Signup = () => {
     let password = state.password;
     let confirmPassword = state.confirmPassword;
     if (password === confirmPassword) {
+      setIsLoading(true);
       axios
         .post("http://localhost:8000/auth/register", state)
         .then((res) => {
@@ -30,16 +32,19 @@ const Signup = () => {
           alert("User successfuly registered");
           // setIsRegister(true);
           setState(initialState);
+          navigate("/login");
         })
         .catch((error) => {
           console.log("Error : ", error.message);
+        })
+        .finally(() => {
+          setIsLoading(false);
         });
     } else {
       alert("Password and Confirm Password not matched.");
     }
   };
 
-  //   const Navigate = useNavigate();
   return (
     <>
       <div className="mvh-100 SignUpPage d-flex justify-content-center align-items-center">
