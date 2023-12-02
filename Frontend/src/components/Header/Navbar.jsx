@@ -34,7 +34,6 @@ const Navbar = () => {
               id="navbarSupportedContent"
             >
               {isAuthenticated ? (
-                // Render logout button if user is authenticated
                 <button
                   className="btn btn-light ms-auto"
                   type="button"
@@ -43,7 +42,6 @@ const Navbar = () => {
                   Logout
                 </button>
               ) : (
-                // Render login button if user is not authenticated
                 <button className="btn btn-light ms-auto" type="button">
                   <Link to="/login" className="text-decoration-none">
                     Login
