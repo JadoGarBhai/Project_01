@@ -47,6 +47,34 @@ router.post("/login", async (req, res) => {
   return res.status(200).json({ message: "User logged in!", token });
 });
 
+// //  //  ///  /////////////////////////////////////////////////////////////////////////////////////////////
+
+// Middleware to verify JWT token
+const verifyToken = (req, res, next) => {
+  const token = req.header("Authorization");
+  if (!token) return res.status(401).json({ message: "Access denied" });
+
+  try {
+    const decoded = jwt.verify(token.split(" ")[1], process.env.SECRET_KEY);
+    req.user = decoded;
+    next();
+  } catch (error) {
+    res.status(400).json({ message: "Invalid token" });
+  }
+};
+
+// Check-auth route
+router.get("/check-auth", verifyToken, async (req, res) => {
+  try {
+    // If the token is valid, you can send back user information
+    // This assumes that user information is stored in the token during login
+    const user = req.user;
+    res.json({ user });
+  } catch (error) {
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
 module.exports = router;
 
 // JWT ----> Advanced form ----> JWE
