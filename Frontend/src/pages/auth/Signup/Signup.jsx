@@ -21,17 +21,19 @@ const Signup = () => {
   // const { email, password, confirmPassword } = state;
   const handleSubmit = (e) => {
     e.preventDefault();
-    let password = state.password;
-    let confirmPassword = state.confirmPassword;
-    if (password === confirmPassword) {
+    const { email, password, confirmPassword } = state;
+
+    if (password.length < 8) {
+      alert("Password length less then 8 characters.");
+    } else if (password !== confirmPassword) {
+      alert("Password and Confirm Password not matched.");
+    } else {
       setIsLoading(true);
       axios
-        .post("http://localhost:8000/auth/register", state)
+        .post("http://localhost:8000/register", state)
         .then((res) => {
-          console.log("res.data : ", res.data);
-          alert("User successfuly registered");
-          // setIsRegister(true);
           setState(initialState);
+          alert("User successfuly registered");
           navigate("/login");
         })
         .catch((error) => {
@@ -40,8 +42,6 @@ const Signup = () => {
         .finally(() => {
           setIsLoading(false);
         });
-    } else {
-      alert("Password and Confirm Password not matched.");
     }
   };
 
