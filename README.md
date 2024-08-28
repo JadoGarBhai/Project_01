@@ -7,7 +7,7 @@
 
 ![Account Detail](https://drive.google.com/uc?export=view&id=10nJQ8NL1GZiqswZWQcFzYqSpnUigTpBC) <br /> <br />
 
-The application includes a range of functionalities, such as-
+The application includes a range of functionalities, such as:
 * Authentication with email and password, as well as login via social media accounts like Google, Facebook, and Github.
 
 * Once authenticated, users are taken to the dashboard, which is the central hub for all banking activities. The dashboard provides users with access to an ATM machine-like interface, where they can perform basic banking transactions such as withdrawing and depositing money.
