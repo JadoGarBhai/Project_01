@@ -10,8 +10,8 @@ function Footer() {
           <div className="row">
             <div className="col">
               <p>
-                &copy; {year} Bank.Made with{" "}
-                <span className="text-white">❤</span> by{" "}
+                &copy; {year} Bank.Made with
+                <span className="text-white">❤</span> by
                 <a
                   className="text-white fw-bold"
                   target="_blank"
