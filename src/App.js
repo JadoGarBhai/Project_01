@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import "./App.scss";
+import "bootstrap/dist/js/bootstrap.bundle";
+import CustomRoutes from "./pages/Routes";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import { AuthenticatedContext } from "Context/AuthenticatedContext";
+import ScreenLoader from "components/ScreenLoader";
 
 function App() {
+  const { isAuthenticated, isLoader } = useContext(AuthenticatedContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {isLoader ? <ScreenLoader /> : <CustomRoutes />}
+      <ToastContainer />
+    </>
   );
 }
 
