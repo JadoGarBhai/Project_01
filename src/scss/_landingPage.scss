@@ -1,0 +1,14 @@
+.landingPage {
+  background-image: url("../assets/landingPageBg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 136px);
+  .container {
+    position: relative;
+  }
+  .bonusOffer {
+    background-color: rgba(0, 70, 107, 0.8);
+    position: absolute;
+    top: 90px;
+  }
+}
