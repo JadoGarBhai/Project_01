@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-// import { useNavigate } from "react-router-dom";
 import { AuthenticatedContext } from "../../../Context/AuthenticatedContext";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -324,9 +323,9 @@ function Login() {
                   ></i>
                 </div>
                 <div className="text-center">
-                  Need an account?{" "}
+                  Need an account?
                   <span>
-                    <Link to="/signUp">SIGNUP</Link>
+                    <Link to="/signUp"> SIGNUP</Link>
                   </span>
                 </div>
               </div>
