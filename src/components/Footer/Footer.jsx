@@ -11,14 +11,14 @@ function Footer() {
             <div className="col">
               <p>
                 &copy; {year} Bank. Made with
-                <span className="text-white">❤</span> by
+                <span className="text-white"> 🧠</span> by
                 <a
                   className="text-white fw-bold"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                   href="https://github.com/sikander-nawaz"
                 >
-                  <span>Sikander Nawaz</span>
+                  <span> Sikander Nawaz</span>
                 </a>
               </p>
             </div>
