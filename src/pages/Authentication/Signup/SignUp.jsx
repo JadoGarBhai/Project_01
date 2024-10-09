@@ -192,7 +192,7 @@ function SignUp() {
                 <div className="text-center">
                   Already a user?
                   <span>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login"> Login</Link>
                   </span>
                 </div>
               </div>
