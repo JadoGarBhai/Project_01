@@ -61,7 +61,7 @@ function ForgotPassword() {
           <div className="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
             <div className="card ForgotPasswordCard w-100">
               <div className="div card-body">
-                <h3>Forgot Password</h3>
+                <h3 className="text-center">Forgot Password</h3>
                 <form>
                   <label for="exampleInputEmail1" className="form-label">
                     Email

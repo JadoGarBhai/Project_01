@@ -226,7 +226,7 @@ function Login() {
           <div className="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
             <div className="card  w-100">
               <div className="div card-body">
-                <h3>LOGIN</h3>
+                <h3 className="text-center">LOGIN</h3>
                 <form onSubmit={handleSubmit}>
                   <label for="exampleInputEmail1" className="form-label">
                     Email
