@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<p align="center">
+  <h1 align="center">Bank Application</h1>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**The Bank-App is a full-stack web application** built with **React JS** and **Firebase**, which aims to provide users with a secure and convenient way to manage their banking needs.
+<br />
 
-## Available Scripts
+![Account Detail](https://drive.google.com/uc?export=view&id=10nJQ8NL1GZiqswZWQcFzYqSpnUigTpBC) <br /> <br />
 
-In the project directory, you can run:
+The application includes a range of functionalities, such as:
 
-### `npm start`
+- Authentication with email and password, as well as login via social media accounts like Google, Facebook, and Github.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Once authenticated, users are taken to the dashboard, which is the central hub for all banking activities. The dashboard provides users with access to an ATM machine-like interface, where they can perform basic banking transactions such as withdrawing and depositing money.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Users can easily withdraw or deposit money from their accounts using the intuitive interface, which guides them through the process step-by-step. Additionally, they can also view their transaction history, which displays all past transactions with details such as date, amount, and account balance.
 
-### `npm test`
+- The Bank-App also allows users to delete their account, in case they no longer wish to use the platform.
+- The application provides users with the ability to view all their existing accounts, providing a complete overview of their financial situation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run ?
 
-### `npm run build`
+#### Run First
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+npm i
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Run Second
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+npm start
+```
 
-### `npm run eject`
+### 1- Landing Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Landing Page](https://drive.google.com/uc?export=view&id=19XBNubWZF4jQgFx9UClyUrBYnddZPYZJ) <br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2- Login Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Login Page](https://drive.google.com/uc?export=view&id=1GB-3vaqG5_8RjcFu-_1zT4vsXMubuJ09) <br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3- Dashboard
 
-## Learn More
+![Dashboard](https://drive.google.com/uc?export=view&id=12qeUUkxHByYylsQH1mBH0LbyzBpbc1Ax) <br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4- Create Account
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Create Account](https://drive.google.com/uc?export=view&id=1B7le7yH3tBVYN-c3i6AayHJOiF_gWFGT) <br />
 
-### Code Splitting
+### 5- Accounts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Accounts](https://drive.google.com/uc?export=view&id=1J0aIgKK4-Wyt3LuCV8mqgCUXGjNBkbAa) <br />
 
-### Analyzing the Bundle Size
+### 6- Account Detail
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Account Detail](https://drive.google.com/uc?export=view&id=10nJQ8NL1GZiqswZWQcFzYqSpnUigTpBC) <br />
 
-### Making a Progressive Web App
+### 7- Delete Account
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Delete Account](https://drive.google.com/uc?export=view&id=1VbNo9772hMSOsZxCbTtszPRagURVyvjO) <br />
 
-### Advanced Configuration
+### 8- Deposit Amount
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Deposit Amount](https://drive.google.com/uc?export=view&id=16z9KkkYLNCs9EQVRKz-RMKOwrYqBnfpd) <br />
 
-### Deployment
+### 9- Withdraw Amount
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Withdraw Amount](https://drive.google.com/uc?export=view&id=1I8lJFSvQfMKg3x1nIE-1POdepE1-_DdT) <br />
 
-### `npm run build` fails to minify
+### 10- Transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Transactions](https://drive.google.com/uc?export=view&id=1c4FJ7KTjVxkw3qLw2FtTOOU9mFQg67-l) <br />
+
+### 11- View Transaction
+
+![View Transaction](https://drive.google.com/uc?export=view&id=1WlnGSXCgJezjskNzTW-OjLi3ocd2vFAo) <br /> <br />
