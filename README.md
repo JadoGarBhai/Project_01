@@ -38,7 +38,7 @@ npm start
 
 ### 2- Login Page
 
-![Login Page](https://drive.google.com/uc?export=view&id=1GB-3vaqG5_8RjcFu-_1zT4vsXMubuJ09) <br />
+![Login Page](https://drive.google.com/file/d/1A058ngWokbJYDBaf6i-jigPRf2zumiy4/view?usp=drive_link) <br />
 
 ### 3- Dashboard
 
