@@ -62,7 +62,7 @@ npm start
 
 ### 8- Deposit Amount
 
-![Deposit Amount](https://drive.google.com/uc?export=view&id=16z9KkkYLNCs9EQVRKz-RMKOwrYqBnfpd) <br />
+<img src="./images/Deposit Amount.png" alt="Deposite Amount"> <br />
 
 ### 9- Withdraw Amount
 
