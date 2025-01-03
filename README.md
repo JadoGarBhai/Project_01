@@ -54,7 +54,7 @@ npm start
 
 ### 6- Account Detail
 
-![Account Detail](https://drive.google.com/uc?export=view&id=10nJQ8NL1GZiqswZWQcFzYqSpnUigTpBC) <br />
+<img src="./images/Account Detail.png" alt="Account Detail"> <br />
 
 ### 7- Delete Account
 
