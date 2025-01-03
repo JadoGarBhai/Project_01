@@ -58,7 +58,7 @@ npm start
 
 ### 7- Delete Account
 
-![Delete Account](https://drive.google.com/uc?export=view&id=1VbNo9772hMSOsZxCbTtszPRagURVyvjO) <br />
+<img src="./images/Delete Account.png" alt="Delete Account"> <br />
 
 ### 8- Deposit Amount
 
