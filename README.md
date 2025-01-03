@@ -66,7 +66,7 @@ npm start
 
 ### 9- Withdraw Amount
 
-![Withdraw Amount](https://drive.google.com/uc?export=view&id=1I8lJFSvQfMKg3x1nIE-1POdepE1-_DdT) <br />
+<img src="./images/Withdraw Amount.png" alt="Withdraw Amount"> <br />
 
 ### 10- Transactions
 
