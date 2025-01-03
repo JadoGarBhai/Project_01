@@ -74,4 +74,4 @@ npm start
 
 ### 11- View Transaction
 
-![View Transaction](https://drive.google.com/uc?export=view&id=1WlnGSXCgJezjskNzTW-OjLi3ocd2vFAo) <br /> <br />
+<img src="./images/View Transaction.png" alt="View Transaction"> <br /> <br />
