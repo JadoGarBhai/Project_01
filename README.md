@@ -70,7 +70,7 @@ npm start
 
 ### 10- Transactions
 
-![Transactions](https://drive.google.com/uc?export=view&id=1c4FJ7KTjVxkw3qLw2FtTOOU9mFQg67-l) <br />
+<img src="./images/Transactions.png" alt="Transactions"> <br />
 
 ### 11- View Transaction
 
