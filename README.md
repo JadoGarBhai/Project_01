@@ -42,15 +42,15 @@ npm start
 
 ### 3- Dashboard
 
-![Dashboard](https://drive.google.com/uc?export=view&id=12qeUUkxHByYylsQH1mBH0LbyzBpbc1Ax) <br />
+<img src="./images/Dashboard.png" alt="Dashbaord"> <br />
 
 ### 4- Create Account
 
-![Create Account](https://drive.google.com/uc?export=view&id=1B7le7yH3tBVYN-c3i6AayHJOiF_gWFGT) <br />
+<img src="./images/Create Account.png" alt="Create Account"> <br />
 
 ### 5- Accounts
 
-![Accounts](https://drive.google.com/uc?export=view&id=1J0aIgKK4-Wyt3LuCV8mqgCUXGjNBkbAa) <br />
+<img src="./images/Accounts.png" alt="Accounts"> <br />
 
 ### 6- Account Detail
 
