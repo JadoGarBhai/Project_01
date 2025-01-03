@@ -34,11 +34,11 @@ npm start
 
 ### 1- Landing Page
 
-<img src="./images/LandingPage.png" alt="html" width="150px" height="100px"> <br />
+<img src="./images/LandingPage.png" alt="LandingPage"> <br />
 
 ### 2- Login Page
 
-![Login Page](https://drive.google.com/file/d/1A058ngWokbJYDBaf6i-jigPRf2zumiy4) <br />
+<img src="./images/LoginPage.png" alt="LoginPage"> <br />
 
 ### 3- Dashboard
 
