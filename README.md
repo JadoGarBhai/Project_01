@@ -34,7 +34,7 @@ npm start
 
 ### 1- Landing Page
 
-![Landing Page](https://drive.google.com/uc?export=view&id=19XBNubWZF4jQgFx9UClyUrBYnddZPYZJ) <br />
+<img src="./images/LandingPage.png" alt="html" width="150px" height="100px"> <br />
 
 ### 2- Login Page
 
